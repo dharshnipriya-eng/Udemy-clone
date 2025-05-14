@@ -14,6 +14,10 @@ div{
     border-bottom: solid black 1px;
     gap: 10px;
     align-items: center;
+    position: sticky;
+    top: 0%;
+    background-color: aliceblue;
+    z-index: 1;
 }
 .Navybar__s2{
     padding: 10px;
@@ -36,6 +40,23 @@ div{
     display: flex;
     gap: 20px;
 }
+.Mylearning{
+    position: relative;
+    cursor: pointer;
+}
+.Mylearning__offer{
+    color: black;
+    background-color: white;
+    padding: 5px;
+    border: solid black 2px;
+    width:100px;
+    position: absolute;
+    top: 30px;
+    display: none;
+}
+.Mylearning:hover .Mylearning__offer{
+    display:block;
+}
 .Category{
     display: flex;
     padding: 10px;
@@ -48,8 +69,22 @@ div{
     padding: 10px;
     border-radius:30px;
 }
+.Saleimg{
+    position: relative;
+}
 .Saleimg img{
-    width:100%;
+    width:100%;  
+}
+.Saleimg__offer{
+    color: black;
+    background-color: white;
+    border: solid black 2px;
+    width: fit-content;
+    padding:20px;
+    border-radius: 10px;
+    position: absolute;
+    top: 10%;
+    left: 10%;
 }
 .Recommended{
     display: flex;
