@@ -1,14 +1,17 @@
-*{
+* {
     margin: 0%;
     padding: 0%;
 }
-div{
+
+div {
     font-family: "Gabarito", sans-serif;
 }
-.Navybar__s1{
+
+.Navybar__s1 {
     color: purple;
 }
-.Navybar{
+
+.Navybar {
     display: flex;
     justify-content: space-between;
     border-bottom: solid black 1px;
@@ -19,129 +22,176 @@ div{
     background-color: aliceblue;
     z-index: 1;
 }
-.Navybar__s2{
+
+.Navybar__s2 {
     padding: 10px;
     border: solid black 1px;
     border-radius: 30px;
-    width:60%;
+    width: 60%;
     display: flex;
     gap: 10px;
     font-size: 20px;
     align-items: center;
 }
-.Navybar__s2 input{
+
+.Navybar__s2 input {
     border: none;
-    width:950px;
+    width: 950px;
 }
-.Navybar__s2 input:focus{
+
+.Navybar__s2 input:focus {
     outline: none;
 }
-.Navybar__s3{
+
+.Navybar__s3 {
     display: flex;
     gap: 20px;
 }
-.Mylearning{
+
+.Mylearning {
     position: relative;
     cursor: pointer;
 }
-.Mylearning__offer{
+
+.Mylearning__offer {
     color: black;
     background-color: white;
     padding: 5px;
     border: solid black 2px;
-    width:100px;
+    width: 100px;
     position: absolute;
     top: 30px;
     display: none;
 }
-.Mylearning:hover .Mylearning__offer{
-    display:block;
+
+.Mylearning:hover .Mylearning__offer {
+    display: block;
 }
-.Category{
+
+.Category {
     display: flex;
     padding: 10px;
-    justify-content:space-between;
+    justify-content: space-between;
     border-bottom: solid black 1px;
 }
-.Category p{
+
+.Category p {
     color: white;
     background-color: purple;
     padding: 10px;
-    border-radius:30px;
+    border-radius: 30px;
+    border: purple solid 2px;
+    cursor: pointer;
 }
-.Saleimg{
+.Category p:hover{
+    color: black;
+    background-color: white;
+}
+
+.Saleimg {
     position: relative;
 }
-.Saleimg img{
-    width:100%;  
+
+.Saleimg img {
+    width: 100%;
 }
-.Saleimg__offer{
+
+.Saleimg__offer {
     color: black;
     background-color: white;
     border: solid black 2px;
     width: fit-content;
-    padding:20px;
+    padding: 20px;
     border-radius: 10px;
     position: absolute;
     top: 10%;
     left: 10%;
+    animation-name: size;
+    animation-duration: 1s;
+    opacity: 0;
+    animation-fill-mode: forwards;
 }
-.Recommended{
+
+@keyframes size {
+    0% {
+        opacity: 1;
+        transform: scale(0);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.Recommended {
     display: flex;
-     justify-content: space-between;
-     padding:10px;
+    justify-content: space-between;
+    padding: 10px;
 }
-.Recommended__container{
+
+.Recommended__container {
     width: 20%;
-    padding:10px;
+    padding: 10px;
     flex-wrap: wrap;
 }
-.Recommended__container img{
+
+.Recommended__container img {
     width: 100%;
     height: 50%;
 }
-.Topic{
-    padding:10px;
+
+.Topic {
+    padding: 10px;
 }
-.Topic__Container{
+
+.Topic__Container {
     display: flex;
     flex-wrap: wrap;
-    gap:10px;
+    gap: 10px;
     margin-top: 10px;
 }
-.Topic__Container p{
+
+.Topic__Container p {
     border: solid gray 2px;
     padding: 10px;
     flex-grow: 1;
     flex-basis: 25%;
 }
-.Popular{
+
+.Popular {
     padding: 10px;
 }
-.Popular__container{
+
+.Popular__container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     margin-top: 10px;
     vertical-align: top;
 }
-.Footer__one{
+
+.Footer__one {
     display: flex;
     gap: 10px;
 }
-.Footer__two{
+
+.Footer__two {
     display: flex;
     justify-content: space-between;
 }
-.Footer{
-    padding:30px;
+
+.Footer {
+    padding: 30px;
     background-color: black;
     color: white;
 }
-.Footer__one p{
+
+.Footer__one p {
     margin: 20px;
 }
-.Footer__two p{
+
+.Footer__two p {
     margin: 20px;
     align-items: center;
 }
