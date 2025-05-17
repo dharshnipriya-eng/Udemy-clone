@@ -10,6 +10,13 @@ div {
 .Navybar__s1 {
     color: purple;
 }
+.Navybar__s4 img{
+    width:20px;
+    height:20px;
+}
+.Navybar__s4{
+    display:none;
+}
 
 .Navybar {
     display: flex;
@@ -195,3 +202,19 @@ div {
     margin: 20px;
     align-items: center;
 }
+
+@media screen and (max-width:600px){
+    body{
+        font-size: 10px;
+    }
+    .Category{
+        display:none;
+    }
+    .Navybar__s2,.Navybar__s3{
+        display:none;
+    }
+    .Navybar__s4{
+        display:block;
+    }
+}
+
